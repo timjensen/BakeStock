@@ -1,0 +1,4 @@
+== 'BakeStock' Small bakery management system.
+
+Under Development
+
