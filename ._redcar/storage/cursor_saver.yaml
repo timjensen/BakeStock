@@ -1,4 +1,95 @@
 --- 
-cursor_positions: []
-
+cursor_positions: 
+  - :path: db/migrate/20120806085110_create_suppliers.rb
+    :cursor_offset: 241
+    :timestamp: 2012-08-07 10:23:51.602000 +12:00
+  - :path: db/migrate/20120806084943_create_orders.rb
+    :cursor_offset: 149
+    :timestamp: 2012-08-07 10:28:47.347000 +12:00
+  - :path: db/migrate/20120806084905_create_products.rb
+    :cursor_offset: 191
+    :timestamp: 2012-08-07 10:23:40.050000 +12:00
+  - :path: db/migrate/20120806085152_create_ingredients.rb
+    :cursor_offset: 131
+    :timestamp: 2012-08-07 10:26:12.042000 +12:00
+  - :path: README.rdoc
+    :cursor_offset: 65
+    :timestamp: 2012-08-07 10:39:03.177000 +12:00
+  - :path: public/index.html
+    :cursor_offset: 431
+    :timestamp: 2012-08-06 20:40:33.072000 +12:00
+  - :path: app/controllers/application_controller.rb
+    :cursor_offset: 81
+    :timestamp: 2012-08-06 20:40:31.807000 +12:00
+  - :path: app/views/sessions/home.html.erb
+    :cursor_offset: 6
+    :timestamp: 2012-08-08 14:27:51.450000 +12:00
+  - :path: app/views/invoices/_items_fields.html.erb
+    :cursor_offset: 152
+    :timestamp: 2012-08-08 14:14:38.831000 +12:00
+  - :path: config/routes.rb
+    :cursor_offset: 113
+    :timestamp: 2012-08-08 14:29:58.120000 +12:00
+  - :path: app/views/sessions/show.html.erb
+    :cursor_offset: 0
+    :timestamp: 2012-08-08 14:32:03.511000 +12:00
+  - :path: app/controllers/sessions_controller.rb
+    :cursor_offset: 60
+    :timestamp: 2012-08-08 14:30:32.664000 +12:00
+  - :path: db/migrate/20120806223428_create_order_items.rb
+    :cursor_offset: 111
+    :timestamp: 2012-08-08 15:23:19.119000 +12:00
+  - :path: db/migrate/20120806223306_create_invoice_items.rb
+    :cursor_offset: 129
+    :timestamp: 2012-08-08 15:19:46.928000 +12:00
+  - :path: db/migrate/20120806085545_create_invoices.rb
+    :cursor_offset: 211
+    :timestamp: 2012-08-08 12:44:25.595000 +12:00
+  - :path: app/models/invoice_item.rb
+    :cursor_offset: 103
+    :timestamp: 2012-08-09 11:49:31.472000 +12:00
+  - :path: app/helpers/invoices_helper.rb
+    :cursor_offset: 416
+    :timestamp: 2012-08-09 12:44:31.895000 +12:00
+  - :path: app/views/invoices/edit.html.erb
+    :cursor_offset: 17
+    :timestamp: 2012-08-09 14:42:13.992000 +12:00
+  - :path: spec/spec_helper.rb
+    :cursor_offset: 2858
+    :timestamp: 2012-08-09 18:59:01.390000 +12:00
+  - :path: app/controllers/invoices_controller.rb
+    :cursor_offset: 459
+    :timestamp: 2012-08-09 14:15:09.743000 +12:00
+  - :path: app/views/invoices/new.html.erb
+    :cursor_offset: 40
+    :timestamp: 2012-08-09 14:50:14.023000 +12:00
+  - :path: app/views/invoices/_form.html.erb
+    :cursor_offset: 57
+    :timestamp: 2012-08-09 14:54:49.328000 +12:00
+  - :path: app/views/invoices/_invoice_item_fields.html.erb
+    :cursor_offset: 243
+    :timestamp: 2012-08-09 14:41:08.528000 +12:00
+  - :path: app/views/invoices/show.html.erb
+    :cursor_offset: 156
+    :timestamp: 2012-08-09 14:44:14.511000 +12:00
+  - :path: app/assets/javascripts/invoices.js.coffee
+    :cursor_offset: 0
+    :timestamp: 2012-08-09 12:37:22.975000 +12:00
+  - :path: app/views/shared/_errors.html.erb
+    :cursor_offset: 256
+    :timestamp: 2012-08-09 15:07:49.351000 +12:00
+  - :path: app/models/invoice.rb
+    :cursor_offset: 145
+    :timestamp: 2012-08-09 15:03:31.992000 +12:00
+    :selection_offset: 120
+    :block_selection_mode: false
+  - :path: app/views/layouts/application.html.erb
+    :cursor_offset: 265
+    :timestamp: 2012-08-09 15:36:51.053000 +12:00
+  - :path: spec/models/invoice_spec.rb
+    :cursor_offset: 961
+    :timestamp: 2012-08-09 19:10:19.958000 +12:00
+  - :path: Gemfile
+    :cursor_offset: 81
+    :timestamp: 2012-08-06 20:47:00.983000 +12:00
 files_to_retain: 0

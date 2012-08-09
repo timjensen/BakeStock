@@ -1,0 +1,17 @@
+<p>
+  <strong>Name:</strong>
+  <%=h @invoice.customer %><br>
+  Contact:<%=h @invoice.cust_contact %>
+  Date:<%=h @invoice.date %>
+</p>
+<h3>Products order:</h3>
+<ul>
+<% for invoice_item in @invoice.invoice_items %>
+  <li>    
+    <%=h invoice_item.prod %><%=h invoice_item.quanity %>
+  </li>
+<% end %>
+</ul>
+<p>
+<%= link_to "Edit", edit_invoice_path(@invoice) %> |
+</p>

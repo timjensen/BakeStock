@@ -1,4 +1,9 @@
 BakeStock::Application.routes.draw do
+  
+  resources :invoices
+  resources :sessions
+  
+  root to: 'sessions#show'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

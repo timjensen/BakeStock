@@ -1,3 +1,13 @@
 --- 
-open_files: []
-
+open_files: 
+  - app/controllers/invoices_controller.rb
+  - app/views/invoices/new.html.erb
+  - app/views/invoices/_form.html.erb
+  - app/views/invoices/_invoice_item_fields.html.erb
+  - app/views/invoices/show.html.erb
+  - app/assets/javascripts/invoices.js.coffee
+  - app/views/shared/_errors.html.erb
+  - app/models/invoice.rb
+  - app/views/layouts/application.html.erb
+  - spec/models/invoice_spec.rb
+  - Gemfile
