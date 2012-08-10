@@ -9,6 +9,7 @@ gem 'bootstrap-sass', '2.0.0'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '2.10.0'
+  gem 'annotate', '2.5.0'
 end
 
 group :test do

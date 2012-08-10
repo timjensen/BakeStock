@@ -1,8 +1,7 @@
 class CreateOrders < ActiveRecord::Migration
   def change
     create_table :orders do |t|
-      t.integer     :order_no
-      t.string      :supplier
+      t.string      :supplier_id
       t.date        :date
       
       t.timestamps

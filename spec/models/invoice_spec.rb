@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: invoices
+#
+#  id           :integer          not null, primary key
+#  customer     :string(255)
+#  cust_contact :string(255)
+#  date         :date
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#
+
 require 'spec_helper'
 
 describe Invoice do

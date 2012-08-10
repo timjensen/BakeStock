@@ -1,0 +1,10 @@
+<%= form_for @supplier do |f| %>
+  <%= render 'shared/errors', object: f.object %>
+  
+  <%= f.label :sup_name %><%= f.text_field :sup_name %><br>
+  <%= f.label :address %><%= f.text_field :address %><br>
+  <%= f.label :fax %><%= f.text_field :fax %><br>
+  <%= f.label :phone %><%= f.text_field :phone %><br>
+
+  <p><%= f.submit "Submit" %></p>
+<% end %>

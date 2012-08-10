@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: invoices
+#
+#  id           :integer          not null, primary key
+#  customer     :string(255)
+#  cust_contact :string(255)
+#  date         :date
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#
+
 class Invoice < ActiveRecord::Base
   # attr_accessible :title, :body
   attr_accessible :cust_contact, :customer, :date, :invoice_items_attributes

@@ -1,6 +1,6 @@
 <%= form_for @invoice do |f| %>
-<%= render 'shared/errors', object: f.object %>  
-<fieldset>
+  <%= render 'shared/errors', object: f.object %>  
+  <fieldset>
     <%= f.label :customer %><%= f.text_field :customer %><br>
     <%= f.label :cust_contact %><%= f.text_field :cust_contact %><br>
     <%= f.label :date %><%= f.date_select :date %>

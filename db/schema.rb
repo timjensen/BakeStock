@@ -14,12 +14,11 @@
 ActiveRecord::Schema.define(:version => 20120806223428) do
 
   create_table "ingredients", :force => true do |t|
-    t.string   "ing_code"
-    t.string   "name"
+    t.integer  "supplier_id"
+    t.string   "ing_name"
     t.integer  "cost"
-    t.integer  "sup_no"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "invoice_items", :force => true do |t|
@@ -39,19 +38,18 @@ ActiveRecord::Schema.define(:version => 20120806223428) do
   end
 
   create_table "order_items", :force => true do |t|
-    t.integer  "order_no"
-    t.integer  "ing_no"
+    t.integer  "order_id"
+    t.integer  "ing_id"
     t.integer  "quanity"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
   create_table "orders", :force => true do |t|
-    t.integer  "order_no"
-    t.string   "supplier"
+    t.string   "supplier_id"
     t.date     "date"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "products", :force => true do |t|
@@ -63,7 +61,6 @@ ActiveRecord::Schema.define(:version => 20120806223428) do
   end
 
   create_table "suppliers", :force => true do |t|
-    t.integer  "sup_no"
     t.string   "sup_name"
     t.string   "address"
     t.integer  "fax"
