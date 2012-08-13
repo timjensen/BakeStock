@@ -1,8 +1,14 @@
 <fieldset>
-  <%= f.label :prod, "Product" %>
-  <%= f.text_field :prod %>
-  <%= f.label :quanity, "Quantity" %>
-  <%= f.text_field :quanity %>
-  <%= f.hidden_field :_destroy %>
-  <%= link_to "remove", '#', class: "remove_fields" %>
+  <div class="row">
+    <div class="span5">
+      <%= f.input :prod, :label => "Product" %>
+    </div>
+    <div class="span3">
+      <%= f.input :quanity, :input_html => { :class => "span1" }, :label => "Quantity" %>
+    </div>
+    <div class-"span2">
+      <%= f.hidden_field :_destroy %>
+      <%= link_to "Remove This Product", '#', class: "remove_fields" %>
+    </div>
+  </div>
 </fieldset>

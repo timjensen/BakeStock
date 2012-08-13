@@ -1,13 +1,14 @@
-<%= form_for @invoice do |f| %>
-  <%= render 'shared/errors', object: f.object %>  
+<%= simple_form_for @invoice, :html => { :class => 'form-inline' } do |f| %>
+<h3>Customer Details:</h3>
   <fieldset>
-    <%= f.label :customer %><%= f.text_field :customer %><br>
-    <%= f.label :cust_contact %><%= f.text_field :cust_contact %><br>
-    <%= f.label :date %><%= f.date_select :date %>
+    <%= f.input :customer, :label => 'Customer Name', :label_html => { :class => "span2" } %>
+    <%= f.input :cust_contact, :label => 'Contact Details', :label_html => { :class => "span2" } %>
+    <%= f.input :date, :label => 'Date Of Order', :input_html => { :class => "span2" }, :label_html => { :class => "span2" } %>
   </fieldset>
+  <h3>Items Ordered:</h3>
   <%= f.fields_for :invoice_items do |builder| %>
     <%= render "invoice_item_fields", :f => builder %>
   <% end %>
-  <%= link_to_add_fields "Add Question", f, :invoice_items %>
-  <p><%= f.submit "Submit" %></p>
+  <%= link_to_add_fields "Add Another Product To Order", f, :invoice_items %>
+  <center><%= f.button :submit %></center>
 <% end %>

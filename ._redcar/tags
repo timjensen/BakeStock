@@ -1,4 +1,4 @@
-1344599568
+1344815985
 Application	C:/Sites/BakeStock/config/application.rb	  class Application 
 ApplicationController	C:/Sites/BakeStock/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	C:/Sites/BakeStock/app/helpers/application_helper.rb	module ApplicationHelper
@@ -23,41 +23,45 @@ SessionsHelper	C:/Sites/BakeStock/app/helpers/sessions_helper.rb	module Sessions
 Supplier	C:/Sites/BakeStock/app/models/supplier.rb	class Supplier 
 SuppliersController	C:/Sites/BakeStock/app/controllers/suppliers_controller.rb	class SuppliersController 
 SuppliersHelper	C:/Sites/BakeStock/app/helpers/suppliers_helper.rb	module SuppliersHelper
-change	C:/Sites/BakeStock/db/migrate/20120806084905_create_products.rb	  def change
 change	C:/Sites/BakeStock/db/migrate/20120806085545_create_invoices.rb	  def change
 change	C:/Sites/BakeStock/db/migrate/20120806223306_create_invoice_items.rb	  def change
 change	C:/Sites/BakeStock/db/migrate/20120806085110_create_suppliers.rb	  def change
 change	C:/Sites/BakeStock/db/migrate/20120806085152_create_ingredients.rb	  def change
 change	C:/Sites/BakeStock/db/migrate/20120806084943_create_orders.rb	  def change
+change	C:/Sites/BakeStock/db/migrate/20120806084905_create_products.rb	  def change
 change	C:/Sites/BakeStock/db/migrate/20120806223428_create_order_items.rb	  def change
-create	C:/Sites/BakeStock/app/controllers/invoices_controller.rb	  def create
 create	C:/Sites/BakeStock/app/controllers/suppliers_controller.rb	  def create
-edit	C:/Sites/BakeStock/app/controllers/invoices_controller.rb	  def edit
+create	C:/Sites/BakeStock/app/controllers/invoices_controller.rb	  def create
+destroy	C:/Sites/BakeStock/app/controllers/invoices_controller.rb	  def destroy
 edit	C:/Sites/BakeStock/app/controllers/suppliers_controller.rb	  def edit
-index	C:/Sites/BakeStock/app/controllers/invoices_controller.rb	  def index
+edit	C:/Sites/BakeStock/app/controllers/invoices_controller.rb	  def edit
 index	C:/Sites/BakeStock/app/controllers/suppliers_controller.rb	  def index
+index	C:/Sites/BakeStock/app/controllers/invoices_controller.rb	  def index
 link_to_add_fields	C:/Sites/BakeStock/app/helpers/invoices_helper.rb	   def link_to_add_fields(name, f, association)
-new	C:/Sites/BakeStock/app/controllers/invoices_controller.rb	  def new
 new	C:/Sites/BakeStock/app/controllers/suppliers_controller.rb	  def new
+new	C:/Sites/BakeStock/app/controllers/invoices_controller.rb	  def new
 should destroy associated invoice items	C:/Sites/BakeStock/spec/models/invoice_spec.rb	it "should destroy associated invoice items" do
 should destroy associated invoice items	C:/Sites/BakeStock/spec/models/order_spec.rb	it "should destroy associated invoice items" do
 show	C:/Sites/BakeStock/app/controllers/sessions_controller.rb	  def show
-show	C:/Sites/BakeStock/app/controllers/invoices_controller.rb	  def show
 show	C:/Sites/BakeStock/app/controllers/suppliers_controller.rb	  def show
-update	C:/Sites/BakeStock/app/controllers/invoices_controller.rb	  def update
+show	C:/Sites/BakeStock/app/controllers/invoices_controller.rb	  def show
 update	C:/Sites/BakeStock/app/controllers/suppliers_controller.rb	  def update
+update	C:/Sites/BakeStock/app/controllers/invoices_controller.rb	  def update
+when a date is not present	C:/Sites/BakeStock/spec/models/order_spec.rb	describe "when a date is not present" do
 when customer code is not present	C:/Sites/BakeStock/spec/models/invoice_spec.rb	describe "when customer code is not present" do
-when customer code is not present	C:/Sites/BakeStock/spec/models/order_spec.rb	describe "when customer code is not present" do
 when customer name is not present	C:/Sites/BakeStock/spec/models/invoice_spec.rb	describe "when customer name is not present" do
-when customer name is not present	C:/Sites/BakeStock/spec/models/order_spec.rb	describe "when customer name is not present" do
 when date is not present	C:/Sites/BakeStock/spec/models/invoice_spec.rb	describe "when date is not present" do
-when date is not present	C:/Sites/BakeStock/spec/models/order_spec.rb	describe "when date is not present" do
 when ingredient cost is not present	C:/Sites/BakeStock/spec/models/ingredient_spec.rb	describe "when ingredient cost is not present" do
 when ingredient name is not present	C:/Sites/BakeStock/spec/models/ingredient_spec.rb	describe "when ingredient name is not present" do
 when no items are present	C:/Sites/BakeStock/spec/models/invoice_spec.rb	describe "when no items are present" do
-when no items are present	C:/Sites/BakeStock/spec/models/order_spec.rb	describe "when no items are present" do
+when no order items are present	C:/Sites/BakeStock/spec/models/order_spec.rb	describe "when no order items are present" do
 when product name is not present	C:/Sites/BakeStock/spec/models/invoice_item_spec.rb	describe "when product name is not present" do
+when product name is not present	C:/Sites/BakeStock/spec/models/product_spec.rb	describe "when product name is not present" do
+when product name is not present	C:/Sites/BakeStock/spec/models/product_spec.rb	describe "when product name is not present" do
+when product name is not present	C:/Sites/BakeStock/spec/models/order_item_spec.rb	describe "when product name is not present" do
 when quantity is not present	C:/Sites/BakeStock/spec/models/invoice_item_spec.rb	describe "when quantity is not present" do
+when quantity is not present	C:/Sites/BakeStock/spec/models/order_item_spec.rb	describe "when quantity is not present" do
+when supplier id is not present	C:/Sites/BakeStock/spec/models/order_spec.rb	describe "when supplier id is not present" do
 when suppliers address is not present	C:/Sites/BakeStock/spec/models/supplier_spec.rb	describe "when suppliers address is not present" do
 when suppliers id is not present	C:/Sites/BakeStock/spec/models/ingredient_spec.rb	describe "when suppliers id is not present" do
 when suppliers name is not present	C:/Sites/BakeStock/spec/models/supplier_spec.rb	describe "when suppliers name is not present" do

@@ -1,3 +1,52 @@
 // Place all the styles related to the Invoices controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+#Invoice {
+  width: 800px;
+  margin: auto;
+  background-color: #DAD7D7;
+  min-height: 500px;
+  margin-top: 10px;
+}
+#Invoice h3 {
+  margin-left: 5px;
+  margin-bottom: 7px;
+}
+.simple_form label {
+  float: left;
+  text-align: right;
+  margin: 2px 10px;
+}
+
+.simple_form div.input {
+  margin-bottom: 10px;
+}
+
+.simple_form div.boolean, .simple_form input[type='submit'] {
+/*margin-left: 120px;*/
+  margin: center;
+}
+
+.simple_form div.boolean label, .simple_form label.collection_radio {
+  float: none;
+  margin: 0;
+}
+
+.simple_form label.collection_radio {
+  margin-right: 10px;
+  margin-left: 2px;
+}
+
+.simple_form .hint {
+  clear: left;
+  margin-left: 120px;
+  font-size: 12px;
+  color: #555;
+  display: block;
+  font-style: italic;
+}
+.remove_fields {
+  float: right;
+  margin-right: 5px;
+}

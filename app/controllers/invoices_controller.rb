@@ -19,7 +19,7 @@ class InvoicesController < ApplicationController
       flash[:notice] = "Successfully created invoice."
       redirect_to invoice_path(@invoice)
     else
-      render 'invoices/new'
+      render 'new'
     end
   end
   
@@ -32,13 +32,13 @@ class InvoicesController < ApplicationController
     if @invoice.update_attributes(params[:invoice])
       redirect_to @invoice, notice: "Successfully updated invoice."
     else
-      render :edit
+      render 'edit'
     end
   end
 
-  #def destroy
-   # @invoice = Invoice.find(params[:id])
-   # @invoice.destroy
-   # redirect_to surveys_url, notice: "Successfully destroyed survey."
- # end
+  def destroy
+    @invoice = Invoice.find(params[:id])
+    @invoice.destroy
+    redirect_to surveys_url, notice: "Successfully destroyed survey."
+  end
 end

@@ -39,10 +39,10 @@ ActiveRecord::Schema.define(:version => 20120806223428) do
 
   create_table "order_items", :force => true do |t|
     t.integer  "order_id"
-    t.integer  "ing_id"
+    t.integer  "ingredient_id"
     t.integer  "quanity"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "orders", :force => true do |t|
@@ -53,8 +53,7 @@ ActiveRecord::Schema.define(:version => 20120806223428) do
   end
 
   create_table "products", :force => true do |t|
-    t.integer  "product_no"
-    t.string   "name"
+    t.string   "prod_name"
     t.integer  "price"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
