@@ -1,8 +1,10 @@
-1344815985
+1344940069
 Application	C:/Sites/BakeStock/config/application.rb	  class Application 
 ApplicationController	C:/Sites/BakeStock/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	C:/Sites/BakeStock/app/helpers/application_helper.rb	module ApplicationHelper
 BakeStock	C:/Sites/BakeStock/config/application.rb	module BakeStock
+Calendar	C:/Sites/BakeStock/app/helpers/calendar_helper.rb	  class Calendar 
+CalendarHelper	C:/Sites/BakeStock/app/helpers/calendar_helper.rb	module CalendarHelper
 CreateIngredients	C:/Sites/BakeStock/db/migrate/20120806085152_create_ingredients.rb	class CreateIngredients 
 CreateInvoiceItems	C:/Sites/BakeStock/db/migrate/20120806223306_create_invoice_items.rb	class CreateInvoiceItems 
 CreateInvoices	C:/Sites/BakeStock/db/migrate/20120806085545_create_invoices.rb	class CreateInvoices 
@@ -10,6 +12,10 @@ CreateOrderItems	C:/Sites/BakeStock/db/migrate/20120806223428_create_order_items
 CreateOrders	C:/Sites/BakeStock/db/migrate/20120806084943_create_orders.rb	class CreateOrders 
 CreateProducts	C:/Sites/BakeStock/db/migrate/20120806084905_create_products.rb	class CreateProducts 
 CreateSuppliers	C:/Sites/BakeStock/db/migrate/20120806085110_create_suppliers.rb	class CreateSuppliers 
+CustOrdersPdf	C:/Sites/BakeStock/app/pdfs/cust_orders_pdf.rb	class CustOrdersPdf 
+DocumentsController	C:/Sites/BakeStock/app/controllers/documents_controller.rb	class DocumentsController 
+DocumentsHelper	C:/Sites/BakeStock/app/helpers/documents_helper.rb	module DocumentsHelper
+HEADER	C:/Sites/BakeStock/app/helpers/calendar_helper.rb	    HEADER =
 Ingredient	C:/Sites/BakeStock/app/models/ingredient.rb	class Ingredient 
 Invoice	C:/Sites/BakeStock/app/models/invoice.rb	class Invoice 
 InvoiceItem	C:/Sites/BakeStock/app/models/invoice_item.rb	class InvoiceItem 
@@ -18,11 +24,15 @@ InvoicesHelper	C:/Sites/BakeStock/app/helpers/invoices_helper.rb	module Invoices
 Order	C:/Sites/BakeStock/app/models/order.rb	class Order 
 OrderItem	C:/Sites/BakeStock/app/models/order_item.rb	class OrderItem 
 Product	C:/Sites/BakeStock/app/models/product.rb	class Product 
+ProductsController	C:/Sites/BakeStock/app/controllers/products_controller.rb	class ProductsController 
+ProductsHelper	C:/Sites/BakeStock/app/helpers/products_helper.rb	module ProductsHelper
+START_DAY	C:/Sites/BakeStock/app/helpers/calendar_helper.rb	    START_DAY =
 SessionsController	C:/Sites/BakeStock/app/controllers/sessions_controller.rb	class SessionsController 
 SessionsHelper	C:/Sites/BakeStock/app/helpers/sessions_helper.rb	module SessionsHelper
 Supplier	C:/Sites/BakeStock/app/models/supplier.rb	class Supplier 
 SuppliersController	C:/Sites/BakeStock/app/controllers/suppliers_controller.rb	class SuppliersController 
 SuppliersHelper	C:/Sites/BakeStock/app/helpers/suppliers_helper.rb	module SuppliersHelper
+calendar	C:/Sites/BakeStock/app/helpers/calendar_helper.rb	  def calendar(date = Date.today, &block)
 change	C:/Sites/BakeStock/db/migrate/20120806085545_create_invoices.rb	  def change
 change	C:/Sites/BakeStock/db/migrate/20120806223306_create_invoice_items.rb	  def change
 change	C:/Sites/BakeStock/db/migrate/20120806085110_create_suppliers.rb	  def change
@@ -32,21 +42,39 @@ change	C:/Sites/BakeStock/db/migrate/20120806084905_create_products.rb	  def cha
 change	C:/Sites/BakeStock/db/migrate/20120806223428_create_order_items.rb	  def change
 create	C:/Sites/BakeStock/app/controllers/suppliers_controller.rb	  def create
 create	C:/Sites/BakeStock/app/controllers/invoices_controller.rb	  def create
+create	C:/Sites/BakeStock/app/controllers/products_controller.rb	  def create
+cust_orders	C:/Sites/BakeStock/app/controllers/documents_controller.rb	  def cust_orders
+day_cell	C:/Sites/BakeStock/app/helpers/calendar_helper.rb	    def day_cell(day)
+day_classes	C:/Sites/BakeStock/app/helpers/calendar_helper.rb	    def day_classes(day)
 destroy	C:/Sites/BakeStock/app/controllers/invoices_controller.rb	  def destroy
+destroy	C:/Sites/BakeStock/app/controllers/products_controller.rb	  def destroy
 edit	C:/Sites/BakeStock/app/controllers/suppliers_controller.rb	  def edit
 edit	C:/Sites/BakeStock/app/controllers/invoices_controller.rb	  def edit
+edit	C:/Sites/BakeStock/app/controllers/products_controller.rb	  def edit
+header	C:/Sites/BakeStock/app/helpers/calendar_helper.rb	    def header
 index	C:/Sites/BakeStock/app/controllers/suppliers_controller.rb	  def index
+index	C:/Sites/BakeStock/app/controllers/sessions_controller.rb	  def index
 index	C:/Sites/BakeStock/app/controllers/invoices_controller.rb	  def index
+index	C:/Sites/BakeStock/app/controllers/products_controller.rb	  def index
+initialize	C:/Sites/BakeStock/app/pdfs/cust_orders_pdf.rb	  def initialize(order)
 link_to_add_fields	C:/Sites/BakeStock/app/helpers/invoices_helper.rb	   def link_to_add_fields(name, f, association)
 new	C:/Sites/BakeStock/app/controllers/suppliers_controller.rb	  def new
 new	C:/Sites/BakeStock/app/controllers/invoices_controller.rb	  def new
+new	C:/Sites/BakeStock/app/controllers/products_controller.rb	  def new
+orders	C:/Sites/BakeStock/app/pdfs/cust_orders_pdf.rb	  def orders
 should destroy associated invoice items	C:/Sites/BakeStock/spec/models/invoice_spec.rb	it "should destroy associated invoice items" do
 should destroy associated invoice items	C:/Sites/BakeStock/spec/models/order_spec.rb	it "should destroy associated invoice items" do
-show	C:/Sites/BakeStock/app/controllers/sessions_controller.rb	  def show
 show	C:/Sites/BakeStock/app/controllers/suppliers_controller.rb	  def show
+show	C:/Sites/BakeStock/app/controllers/sessions_controller.rb	  def show
 show	C:/Sites/BakeStock/app/controllers/invoices_controller.rb	  def show
+show	C:/Sites/BakeStock/app/controllers/products_controller.rb	  def show
+table	C:/Sites/BakeStock/app/helpers/calendar_helper.rb	    def table
+title	C:/Sites/BakeStock/app/pdfs/cust_orders_pdf.rb	  def title
 update	C:/Sites/BakeStock/app/controllers/suppliers_controller.rb	  def update
 update	C:/Sites/BakeStock/app/controllers/invoices_controller.rb	  def update
+update	C:/Sites/BakeStock/app/controllers/products_controller.rb	  def update
+week_rows	C:/Sites/BakeStock/app/helpers/calendar_helper.rb	    def week_rows
+weeks	C:/Sites/BakeStock/app/helpers/calendar_helper.rb	    def weeks
 when a date is not present	C:/Sites/BakeStock/spec/models/order_spec.rb	describe "when a date is not present" do
 when customer code is not present	C:/Sites/BakeStock/spec/models/invoice_spec.rb	describe "when customer code is not present" do
 when customer name is not present	C:/Sites/BakeStock/spec/models/invoice_spec.rb	describe "when customer name is not present" do

@@ -7,6 +7,8 @@ class InvoicesController < ApplicationController
   
   def index
     @invoices = Invoice.all
+    @invoices_by_date = @invoices.group_by(&:date)
+    @date = params[:date] ? Date.parse(params[:date]) : Date.today
   end
   
   def show
@@ -16,7 +18,7 @@ class InvoicesController < ApplicationController
   def create
   @invoice = Invoice.new(params[:invoice])
     if @invoice.save
-      flash[:notice] = "Successfully created invoice."
+      flash[:notice] = "Successfully created customer order."
       redirect_to invoice_path(@invoice)
     else
       render 'new'
@@ -30,7 +32,7 @@ class InvoicesController < ApplicationController
   def update
     @invoice = Invoice.find(params[:id])
     if @invoice.update_attributes(params[:invoice])
-      redirect_to @invoice, notice: "Successfully updated invoice."
+      redirect_to @invoice, notice: "Successfully updated customer order."
     else
       render 'edit'
     end
@@ -39,6 +41,6 @@ class InvoicesController < ApplicationController
   def destroy
     @invoice = Invoice.find(params[:id])
     @invoice.destroy
-    redirect_to surveys_url, notice: "Successfully destroyed survey."
+    redirect_to invoices_url, notice: "Successfully destroyed customer order."
   end
 end

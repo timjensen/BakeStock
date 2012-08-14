@@ -3,8 +3,10 @@ BakeStock::Application.routes.draw do
   resources :invoices
   resources :sessions
   resources :suppliers
+  resources :products
   
-  root to: 'sessions#show'
+  root to: 'sessions#index'
+  get 'documents/cust_orders'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

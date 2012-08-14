@@ -2,51 +2,159 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
+/* General */
+body {
+  background-color: black;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+.tab25 {
+  margin-left: 25px;
+}
+/* Edit and New Form */
 #Invoice {
   width: 800px;
   margin: auto;
   background-color: #DAD7D7;
   min-height: 500px;
+    
+  h3 {
+  margin-left: 7px;
+  margin-bottom: 7px;
+  }
+}
+#TopNavBig {
+  width: 800px;
+  margin: auto;
+  background-color: #DAD7D7;
   margin-top: 10px;
 }
-#Invoice h3 {
-  margin-left: 5px;
-  margin-bottom: 7px;
+#InvLinksBig {
+  text-align: center;
+  width: 800px;
+  margin: auto;
+  background-color: #DAD7D7;
 }
 .simple_form label {
   float: left;
   text-align: right;
   margin: 2px 10px;
 }
-
 .simple_form div.input {
   margin-bottom: 10px;
 }
-
 .simple_form div.boolean, .simple_form input[type='submit'] {
-/*margin-left: 120px;*/
   margin: center;
 }
-
 .simple_form div.boolean label, .simple_form label.collection_radio {
   float: none;
   margin: 0;
 }
-
 .simple_form label.collection_radio {
   margin-right: 10px;
   margin-left: 2px;
 }
-
-.simple_form .hint {
-  clear: left;
-  margin-left: 120px;
-  font-size: 12px;
-  color: #555;
-  display: block;
-  font-style: italic;
-}
 .remove_fields {
   float: right;
-  margin-right: 5px;
+  margin-right: 10px;
 }
+/* Show */
+#InvoiceSmall {
+  width: 700px;
+  margin: auto;
+  background-color: #DAD7D7;
+  min-height: 500px;
+  margin-top: 10px;
+  
+  ul {
+  list-style-type: none;
+  margin-left: 200px;
+  font-size: 14pt;
+  }
+  
+  li {
+  margin-bottom: 7px;
+  }
+  
+  h3 {
+  margin-left: 7px;
+  }
+}
+#InvShowLabel {
+  width: 200px;
+  float: left;
+  text-align: right;
+  font-size: 14pt;
+  font-weight: bold;  
+}
+#InvShowInfo {
+  width: 495px;
+  float: left;
+  height: 27px;
+  margin-left: 5px;
+  font-size: 14pt;
+}
+#InvLinks {
+  text-align: center;
+  width: 700px;
+  margin: auto;
+  background-color: #DAD7D7;
+}
+/* Index */
+#orders {
+  background-color: #DAD7D7;
+  width: 800px;
+  margin: auto;
+    
+  ul {
+  font-size: 11px;
+  list-style-type: none;
+  }
+}
+#orders .calendar {
+  border-collapse: collapse;
+  width: 790px;
+  margin: auto;
+  
+
+  td, th {
+    font-family: "Lucida Grande", arial, helvetica, sans-serif;
+    font-size: 10px;
+    padding: 6px;
+    border: 1px solid #999;
+  }
+
+  th {
+    background: #DDD;
+    color: #666;
+    text-align: center;
+    width: 14.2857142857143%;
+  }
+
+  td {
+    background: #FFF;
+    color: #777;
+    height: 80px;
+    vertical-align: top;
+    font-size: 16px;
+  }
+  
+  .notmonth, .notmonth a { color: #CCC; }
+  .today { background-color: #D7F2FF; }
+}
+
+#orders #month {
+  margin: 0;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 22px;
+  a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: #999;
+  }
+}
+

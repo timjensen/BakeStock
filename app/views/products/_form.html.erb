@@ -1,0 +1,8 @@
+<%= simple_form_for @product, :html => { :class => 'form-inline' } do |f| %>
+<h3>Product Details:</h3><br>
+  <fieldset>
+    <%= f.input :prod_name, :label => 'Product Name', :label_html => { :class => "span3" } %>
+    <%= f.input :price, :label => 'Product Price', :label_html => { :class => "span3" } %>
+  </fieldset><br><br>
+  <center><%= f.button :submit %></center>
+<% end %>

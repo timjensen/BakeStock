@@ -1,0 +1,18 @@
+<div id="ProductSmall">
+  <h1>Product Profile</h1>
+  <div id="ProdShowLabel">
+    Product Name:  
+  </div>
+  <div id="ProdShowInfo">
+    <%=h @product.prod_name %>
+  </div>
+  <div id="ProdShowLabel">
+     Product Price: 
+  </div>
+  <div id="ProdShowInfo">
+    <%=h @product.price %>
+  </div>
+</div>
+<div id="ProdLinks">
+    <%= link_to "Edit", edit_product_path(@product) %> |
+</div>

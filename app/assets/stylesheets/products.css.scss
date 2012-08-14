@@ -1,0 +1,55 @@
+// Place all the styles related to the Products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#Product {
+  width: 800px;
+  margin: auto;
+  background-color: #DAD7D7;
+  min-height: 500px;
+    
+  h3 {
+  margin-left: 25px;
+  margin-bottom: 7px;
+  }
+}
+#ProductSmall {
+  width: 700px;
+  margin: auto;
+  background-color: #DAD7D7;
+  min-height: 500px;
+  margin-top: 10px;
+  
+  ul {
+  list-style-type: none;
+  margin-left: 200px;
+  font-size: 14pt;
+  }
+  
+  li {
+  margin-bottom: 7px;
+  }
+  
+  h3 {
+  margin-left: 7px;
+  }
+}
+#ProdShowLabel {
+  width: 200px;
+  float: left;
+  text-align: right;
+  font-size: 14pt;
+  font-weight: bold;  
+}
+#ProdShowInfo {
+  width: 495px;
+  float: left;
+  height: 27px;
+  margin-left: 5px;
+  font-size: 14pt;
+}
+#ProdLinks {
+  text-align: center;
+  width: 700px;
+  margin: auto;
+  background-color: #DAD7D7;
+}

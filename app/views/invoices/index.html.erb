@@ -1,0 +1,22 @@
+<div id="TopNavBig">
+  <%= link_to '<i class="icon-home"></i> Return To Dashboard'.html_safe, sessions_path %>
+</div>
+<div id="orders">
+<h1>Customer Orders</h1>
+<center><%= link_to "Create New Order", new_invoice_path, class: "btn btn-large btn-primary" %> </center>
+<h2 id="month">
+    <%= link_to "<", date: @date.prev_month %>
+    <%= @date.strftime("%B %Y") %>
+    <%= link_to ">", date: @date.next_month %>
+</h2>
+<%= calendar @date do |date| %>
+  <%= date.day %>
+  <% if @invoices_by_date[date] %>
+    <ul>
+        <% @invoices_by_date[date].each do |invoice| %>
+          <li><%= link_to invoice.customer, invoice %></li>
+        <% end %>
+      </ul>
+  <% end %>
+<% end%>
+</div>
